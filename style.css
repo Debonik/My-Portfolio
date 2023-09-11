@@ -357,6 +357,9 @@ h3{
 }
 
 /* ----- PROJECTS BOX ----- */
+h3 {
+    text-align: center;
+}
 .project-container{
     display: flex;
     width: 100%;
@@ -381,6 +384,7 @@ h3{
     font-size: 50px;
     color: #00B5E7;
     margin-bottom: 25px;
+    text-decoration: none;
 }
 .project-box label{
     font-size: 15px;
@@ -388,8 +392,12 @@ h3{
 }
 .project-box>h3{
     text-align: center;
+    text-decoration: none;
 }
-.project-box::after, .contact-info::after{
+.project-box>a{
+    color: #F8F8F8;
+}
+.contact-info::after{
     content: "";
     position: absolute;
     bottom: -100%;
@@ -398,16 +406,7 @@ h3{
     height: 100%;
     transition: .4s;
     z-index: 1;
-}
-.project-box:hover.project-box::after,
-.contact-info:hover.contact-info::after{
-    bottom: 0;
-}
-.project-box:hover.project-box i,
-.project-box:hover.project-box>h3,
-.project-box:hover.project-box>label{
-    color: var(--color-white);
-    z-index: 2;
+    color: #F8F8F8;
 }
 
 /* ----- CONTACT BOX ----- */
